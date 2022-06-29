@@ -20,7 +20,7 @@ app.get('/user', function (req, res) {
 app.delete('/user/:id', function (req, res) {
     const idOfUser = parseInt(req.body.id);
     restUsers = users.filter((user) => user.id !== idOfUser);
-//    users = [{ id: 14, number: '993', name: 'Ron' }]
+
     if (users !== -1) {
      users = { ...restUsers };
        res.json(users)
